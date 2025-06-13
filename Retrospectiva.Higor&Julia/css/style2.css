@@ -1,0 +1,317 @@
+/* Removido o .hidden duplicado */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* === CONTAINER DO PLAYER === */
+.player-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #2c2c2c;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+}
+
+.album-cover {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* === INFORMAÇÕES DA MÚSICA === */
+.music-info {
+  margin-top: 20px;
+}
+
+.custom-controls button {
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* === SEÇÃO "SOBRE O CASAL" === */
+.sobre-casal {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-casal-foto {
+  width: 90%;
+  max-width: 350px;
+  height: 350px;
+  background-image: url('../fotos/sobre-casal.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sobre-casal-conteudo {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.sobre-casal-conteudo h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.nomes {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.desde {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#contador {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+#contador div {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 10px;
+  width: 70px;
+}
+
+#contador span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#contador small {
+  font-size: 12px;
+}
+
+/* === MENSAGEM ESPECIAL === */
+.mensagem-especial {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mensagem-conteudo {
+  background: #830505;
+  border-radius: 28px;
+  padding: 24px 18px 70px 18px;
+  width: 100%;
+  max-width: 370px;
+  color: white;
+  box-shadow: 0 0 24px #c00a;
+  position: relative;
+  margin: 0 auto;
+  transition: max-height 0.5s cubic-bezier(.4,1.2,.6,1);
+  max-height: 210px; /* altura inicial */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mensagem-conteudo.expanded {
+  max-height: 900px;
+}
+
+.mensagem-conteudo h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mensagem-texto-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#mensagemTexto {
+  color: #222;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: left; /* alinhamento à esquerda */
+  margin: 18px 0 0 0;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+#mostrarBtn {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #830505;
+  border: none;
+  border-radius: 18px;
+  padding: 12px 28px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #c00a;
+  transition: background 0.2s, color 0.2s;
+  z-index: 2;
+}
+
+#mostrarBtn:hover {
+  background: #ffeaea;
+  color: #c00;
+}
+
+/* Botão "CLIQUE AQUI" estilo neon */
+.next-screen-wrapped {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.continue-text-wrapped {
+  color: #1BFD9C;
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 0 8px #111;
+}
+
+.unique-button-47283 {
+  --green: #1BFD9C;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%, transparent 60%, rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+  cursor: pointer;
+}
+
+.unique-button-47283:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.unique-button-47283:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%, rgba(27, 253, 156, 0.1) 60%, transparent 100%);
+}
+
+.unique-button-47283:hover:before {
+  transform: translateX(15em);
+}
+
+/* === CONVITE PARA RETROSPECTIVA === */
+.convite-retrospectiva {
+  margin: 60px auto;
+  max-width: 400px;
+  background: #111;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-retrospectiva {
+  background-color: #0ebcc9;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: -10px;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-retrospectiva:hover {
+  background-color: #1784a5;
+}
+
+/* === TELA DE VÍDEO (RESPONSIVO) === */
+#tela-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.video-container {
+  max-width: 400px;
+  background: #111;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background-color: black;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  border-radius: 0;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

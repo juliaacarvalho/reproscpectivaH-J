@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retrospectiva - Música do Casal</title>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="player-container">
+    <!-- Capa e música -->
+    <img src="fotos/casal.jpg" alt="Foto do Casal" class="album-cover"/>
+    <div class="music-info">
+      <h2>Eu quero ser sua</h2>
+      <p>Nossa música</p>
+      <audio id="player" src="audio/musica-do-casal.mp3.mp3" autoplay></audio>
+      <div class="custom-controls">
+        <button id="playPauseBtn" type="button">
+          <i id="play-icon" class="fas fa-pause"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Seção Sobre o Casal -->
+    <div class="sobre-casal">
+      <div class="sobre-casal-foto">
+        <div class="sobre-casal-conteudo">
+          <h3>Sobre o casal</h3>
+          <p class="nomes">Higor e Júlia</p>
+          <p class="desde">Juntos desde 21/10/2022</p>
+          <div id="contador">
+            <div><span id="anos">0</span><small>Anos</small></div>
+            <div><span id="meses">0</span><small>Meses</small></div>
+            <div><span id="dias">0</span><small>Dias</small></div>
+            <div><span id="horas">0</span><small>Horas</small></div>
+            <div><span id="minutos">0</span><small>Minutos</small></div>
+            <div><span id="segundos">0</span><small>Segundos</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Mensagem Especial -->
+    <div class="mensagem-especial">
+      <div class="mensagem-conteudo" id="mensagemBox">
+        <h3>Mensagem especial</h3>
+        <div class="mensagem-texto-container">
+          <p id="mensagemTexto"></p>
+        </div>
+        <button id="mostrarBtn" type="button">Mostrar Mensagem</button>
+      </div>
+    </div>
+  
+
+    <!-- Botão para iniciar vídeo -->
+    <div class="convite-retrospectiva" id="conviteRetrospectiva">
+      <h2>Seu Relacionamento Wrapped</h2>
+      <p>Explore o seu tempo em casal</p>
+      <button id="botaoVamosLa" class="btn-retrospectiva" type="button">Vamos lá</button>
+    </div>
+
+    <!-- Vídeo escondido -->
+    <div id="tela-video" class="hidden">
+      <div class="video-container">
+        <div class="video-wrapper">
+          <video id="video-retrospectiva" class="video-element" controls>
+            <source src="videos/video-retro.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão para próxima tela -->
+    <div class="next-screen-wrapped">
+      <p class="continue-text-wrapped">CONTINUE SEU WRAPPED:</p>
+      <a href="tela3.html">
+        <button class="unique-button-47283" id="proxima-tela">CLIQUE AQUI</button>
+      </a>
+    </div>
+  </div>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
